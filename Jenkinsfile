@@ -9,20 +9,23 @@ pipeline {
         }
         stage('Build') {
             steps {
-                sh 'echo "Building..."'
-                // Add your build commands here
+                bat 'echo Building...'
+                // Replace the following with your actual build command
+                bat 'build_command'
             }
         }
         stage('Test') {
             steps {
-                sh 'echo "Testing..."'
-                // Add your test commands here
+                bat 'echo Testing...'
+                // Replace the following with your actual test command
+                bat 'test_command'
             }
         }
         stage('Deploy') {
             steps {
-                sh 'echo "Deploying..."'
-                // Add your deploy commands here
+                bat 'echo Deploying...'
+                // Replace the following with your actual deploy command
+                bat 'deploy_command'
             }
         }
     }
